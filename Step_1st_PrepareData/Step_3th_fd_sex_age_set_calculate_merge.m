@@ -1,4 +1,3 @@
-%cd 'D:\projects\ABCD\func_baseline_10min\'
 clear
 %get fd data
 %calculate mean framewise displacement
@@ -67,7 +66,7 @@ for i = 1:length(site_scanner)
     batch(i,3) = cellstr(site{i});
     batch(i,4)= cellstr(scanner{i});
 end
-%writecell(batch, 'D:\projects\ABCD\batch.txt','Delimiter','tab')
+
 
 % merge age sex fd by subjectkey
 ef = importdata(['D:\projects\ABCD\EF\data\ef_task23.csv']);
@@ -102,7 +101,7 @@ fd = fd';
 age = cov(:, 2);
 sex =cov(:, 3);
 batch = cov(:, 4);
-%name = {'age','sex','fd','batch'};
+
 covariable = table(inter_subkeyfd,age,sex,fd,batch);
 writetable(covariable,'D:\projects\ABCD\func_baseline_10min\covariables.txt')
 

@@ -4,10 +4,10 @@ import pandas as pd
 import mat73
 import scipy.io as sio
 
-data = mat73.loadmat(r'D:\projects\ABCD\func_baseline_10min\fcm.mat')
+data = mat73.loadmat(r'D:\projects\ABCD\func_baseline_10min\fc.mat')
 fc = data['fc'].T
 
-covars = pd.read_csv(r'D:\projects\ABCD\func_baseline_10min\cov.txt')
+covars = pd.read_csv(r'D:\projects\ABCD\func_baseline_10min\covariables.txt')
 cotegorical_cols = ['sex']
 continuous_col = ['age']
 
