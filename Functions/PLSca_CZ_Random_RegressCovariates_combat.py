@@ -2,7 +2,6 @@
 """
 Created on Sun Jun  5 13:57:17 2022
 
-@author: Yiyangyang
 """
 
 # -*- coding: utf-8 -*-
